@@ -9,7 +9,7 @@ test: up
     test $? -eq 0 && echo ok
 
     printf "Grafana: "
-    curl --fail-with-body localhost:80/grafana/login &>/dev/null
+    curl --fail-with-body localhost/grafana/login &>/dev/null
     test $? -eq 0 && echo ok
 
 up: down
