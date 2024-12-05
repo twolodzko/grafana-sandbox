@@ -13,7 +13,8 @@ services:
     container_name: nginx
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./index.html:/usr/share/nginx/html/index.html
+      - ./grafana.ini:/etc/grafana/grafana.ini:ro
+      - ./index.html:/usr/share/nginx/html/index.html:ro
     ports:
       - '80:80'
     networks:
