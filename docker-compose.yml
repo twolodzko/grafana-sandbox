@@ -6,7 +6,7 @@ services:
     volumes:
       - ./grafana.ini:/etc/grafana/grafana.ini:ro
     ports:
-      - '3000:80'
+      - '3000:3000'
     networks:
       - network
 
