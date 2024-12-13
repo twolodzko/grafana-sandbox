@@ -4,5 +4,3 @@ up: down
 
 down:
     docker compose down
-
-
