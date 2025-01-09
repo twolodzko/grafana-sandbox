@@ -3,7 +3,7 @@ run: up
     @ sleep 1s
     open --new -a "Google Chrome" --args \
         --incognito \
-        --url localhost/grafana
+        --url localhost/foobar/grafana
 
 up: down
     docker compose up -d
